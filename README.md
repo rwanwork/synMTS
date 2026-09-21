@@ -32,10 +32,10 @@ If you do not plan to use both systems, then you will need to edit the workflows
 This repository contains the following:
 
   * Four Snakemake workflows in four separate directories,
-  * source code in Perl and R,
-  * Varopis `environment.yml` file for creating a [conda](https://docs.conda.io/en/latest/) environment,
-  * licensing information, and
-  * data from a sample execution of the workflow (including output from the MitoFates and DeepMito servers).  More specifically, there are: 
+  * Source code in Perl and R,
+  * Various `environment.yml` files for creating a [conda](https://docs.conda.io/en/latest/) environment to run these workflows,
+  * Licensing information, and
+  * Data from a sample execution of the workflow (including output from the MitoFates and DeepMito servers).  More specifically, there are: 
        * Three replicates of 200 sequences each across the 9 methods (i.e., 3 * 200 * 9 = 5,400 synMTS).
        * Results from the MitoFates server for these 5,400 synMTS.
        * Results from the DeepMito server for these 5,400 synMTS.
