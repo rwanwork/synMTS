@@ -53,11 +53,21 @@ Software that needs to be installed is given in this table:
 | ncbi-blast+             | 2.16.0+ds-7          | No        | Yes             | [Ubuntu package](https://packages.ubuntu.com/eu/resolute/ncbi-blast+) |
 | streme                  | 5.5.9                | Yes       | No              | [Meme Suite](https://meme-suite.org/meme/doc/download.html)           |
 
-Experiments with this software have been successfully run on a Linux system running Ubuntu 25.10 and Ubuntu 26.04.  The software versions in the table above represent the tools used during software development.  They do not represent the minimum requirements; it is possible that lower versions can be used.
+Experiments with this software have been successfully run on a Linux system running Ubuntu 25.10 and Ubuntu 26.04.  The software versions in the table above represent the tools used during software development.  They do not represent the minimum requirements; it is possible that lower versions can be used.  
 
-More importantly, the workflows in this repository use Snakemake to call Perl and R scripts.  All of these programs were installed via [Miniforge](https://github.com/conda-forge/miniforge) into a "conda" environment, except for the software listed in the above table.
+
+### Conda
+
+The workflows in this repository use Snakemake to call Perl and R scripts.  All of these programs were installed via [Miniforge](https://github.com/conda-forge/miniforge) into a "conda" environment.
 
 Go to the `Common/conda/` directory and create the environment using `conda env create -f original-pinned.yml` to create the environment used for the manuscript.  This is explained in the online conda [instructions](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).  Alternatively, use `original.yml` if some pinned software are no longer available.  Other environments that might be of interest to you are `updated.yml` and `macos.yml`.  The former employs updated software from the original manuscript submission while the latter is for the MacOS operating system (only limited testing performed).
+
+
+### Other programs
+
+Other software in the table above were installed outside of `conda`.  Those that are Ubuntu packages were installed using `apt-get` by a system administrator.  The source code for "Meme Suite" was downloaded and compiled locally.
+
+The path to `hmoment` from Emboss should be updated in the `@args` variable at the end of `statistics/Perl/run-hmoment.pl`.  The path to Streme is stored in the `STREME_SOFTWARE` variable in the file `Common/config/global-vars.smk`, which is used by the `select` workflow.
 
 
 Directory Organisation
