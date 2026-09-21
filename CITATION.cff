@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: TargetMITO:  A rule-based model for generating functional synthetic mitochondrial targeting sequences in yeast
+title: "TargetMITO:  A rule-based model for generating functional synthetic mitochondrial targeting sequences in yeast"
 message: "If you use this software, please cite it as below."
 type: software
 authors:
