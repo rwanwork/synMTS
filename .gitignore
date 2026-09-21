@@ -1,0 +1,6 @@
+##  Ignore the output directories
+Common/Output/
+
+##  Ignore the temporary Snakemake directory
+.snakemake/
+

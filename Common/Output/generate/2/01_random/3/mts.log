@@ -1,0 +1,10 @@
+==	Required arguments:
+==	  Method:  3
+==	  Number of sequences:  200
+==	  Minimum length:  40
+==	  Maximum length:  120
+==	  Filename of amino acid properties:  Common/config/aminoacids-features.csv
+==	  Minimum charge for method #3:  8
+==	Optional arguments:
+==	  Seed to use:  (random)
+==	Random seed:  3811744417

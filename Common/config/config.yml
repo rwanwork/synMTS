@@ -1,0 +1,75 @@
+# Copyright 2026 Raymond Wan (rwan.work@gmail.com)
+#   https://github.com/rwanwork/synMTS
+#
+# This file is part of synMTS.
+#
+# synMTS is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation, either version 3 of the License, or (at your
+# option) any later version.
+#
+# synMTS is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program. If not, see <https://www.gnu.org/licenses/>.
+
+##  Data tables with additional configuration information
+deepmito:  "config/deepmito.tsv"
+deepmito_halved:  "config/deepmito-halved.tsv"
+mitofates:  "config/mitofates.tsv"
+mitofates_subrk:  "config/mitofates-sub_r_k.tsv"
+group_reps:  "config/group-reps.tsv"
+group_proteins:  "config/group-proteins.tsv"
+select_order:  "config/select-order.tsv"
+
+
+##  Parameters for "generate" workflow
+generate:
+  number:  200
+  minlen:  40
+  maxlen:  120
+  mincharge:  8
+  methods:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+
+
+##  Parameters for "statistics" workflow
+statistics:
+  hmoment_aangle:  100
+  hmoment_bangle:  160
+
+
+##  Parameters for "select" workflow
+select:
+  gproteins:  X
+  hmoment_window:  10
+
+
+##  Parameters for replicates (the position to number from)
+replicates:
+  start:
+    "1":  1
+    "2":  201
+    "3":  401
+
+
+##  Protein sequences
+protein:
+  sequences:
+    - atp8
+    - atp9
+    - cox2
+    - hac1
+    - mmf1
+

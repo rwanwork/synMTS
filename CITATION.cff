@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: TargetMITO:  A rule-based model for generating functional synthetic mitochondrial targeting sequences in yeast
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - given-names: K
+    family-names: Gombeau
+  - given-names: R
+    family-names: Wan
+  - given-names: J S
+    family-names: James
+  - given-names: D
+    family-names: Tribouillard-Tanvier
+  - given-names: Y
+    family-names: Cai
+preferred-citation:
+  type: article
+  authors:
+  - given-names: "K"
+    family-names: "Gombeau"
+    orcid:  "https://orcid.org/0000-0003-3062-6365"
+  - given-names: "R"
+    family-names: "Wan"
+    orcid: "https://orcid.org/0000-0003-3202-7008"
+  - given-names: "J S"
+    family-names: "James"
+    orcid:  "https://orcid.org/0000-0003-2058-4210"
+  - given-names: "D"
+    family-names: "Tribouillard-Tanvier"
+    orcid:  "https://orcid.org/0000-0002-2290-5375"
+  - given-names: "Y"
+    family-names: "Cai"
+    orcid:  "https://orcid.org/0000-0003-1663-2865"
+  doi: "https://doi.org/10.64898/2026.02.22.707306"
+  journal: "bioRxiv"
+  title: "TargetMITO:  A rule-based model for generating functional synthetic mitochondrial targeting sequences in yeast"
+  year: 2026
+date-released: 2026-02-23

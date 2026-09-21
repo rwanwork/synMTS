@@ -1,0 +1,11 @@
+ALPHABET "Custom"
+
+# Core symbols
+
+A "Alanine" 0000CC
+F "Phenylalanine" 0000CC
+G "Glycine" FFB300
+C "Cysteine" 0000CC
+N "Asparagine" 008000
+H "Histidine" FFCCCC
+D "Aspartic acid" FF00FF
