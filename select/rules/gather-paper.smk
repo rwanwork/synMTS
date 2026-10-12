@@ -26,10 +26,10 @@ rule Copy_Supp_NoProtein_Files:
     input_fn5 = OUTPUT_DIR + "/select/real/02_hydrophilicity_graphs/su9.eps"
   output:
     output_fn1 = PAPER_SUPP_OUTPUT_DIR + "/{greps}/text/select-order.tsv",
-    output_fn2 = PAPER_SUPP_OUTPUT_DIR + "/{greps}/png/oxa1.png",
-    output_fn3 = PAPER_SUPP_OUTPUT_DIR + "/{greps}/eps/oxa1.eps",
-    output_fn4 = PAPER_SUPP_OUTPUT_DIR + "/{greps}/png/su9.png",
-    output_fn5 = PAPER_SUPP_OUTPUT_DIR + "/{greps}/eps/su9.eps",
+    output_fn2 = PAPER_MAIN_OUTPUT_DIR + "/{greps}/png/oxa1.png",
+    output_fn3 = PAPER_MAIN_OUTPUT_DIR + "/{greps}/eps/oxa1.eps",
+    output_fn4 = PAPER_MAIN_OUTPUT_DIR + "/{greps}/png/su9.png",
+    output_fn5 = PAPER_MAIN_OUTPUT_DIR + "/{greps}/eps/su9.eps",
     output_fn0 = MANUSCRIPT_OUTPUT_DIR + "/select.{greps}"
   shell:
     """
