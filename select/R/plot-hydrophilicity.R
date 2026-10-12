@@ -113,7 +113,13 @@ ggplot_obj <- ggplot (x, aes (x=Position, y=Hydrophilicity, fill=Colour))
 ggplot_obj <- ggplot_obj + geom_bar (stat="identity")
 ggplot_obj <- ggplot_obj + theme (legend.position="none")
 ggplot_obj <- ggplot_obj + scale_fill_identity (guide = "none") + xlab ("Amino acids")
-ggplot_obj <- ggplot_obj + theme_classic () + scale_y_continuous(limits = c(-3.5, 3.5))
+ggplot_obj <- ggplot_obj + theme_classic ()
+ggplot_obj <- ggplot_obj + scale_y_continuous(limits = c(-3.5, 3.5))
+ggplot_obj <- ggplot_obj + theme (
+  axis.title.x = element_text(size = 16),
+  axis.title.y = element_text(size = 16),
+  axis.text = element_text (size = 16)
+)
 ggplot_obj <- ggplot_obj + geom_hline (yintercept = 0)
 
 
